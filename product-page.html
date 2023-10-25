@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/515b445b8c.js" crossorigin="anonymous"></script>
+    <!-- FANCYBOX CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/product-page.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container navbar">
+                <a href="#" class="logo">Online Satış Sitesi</a>
+                <form role="search">
+                    <input type="text" id="search-box" placeholder="Arama yapın...">
+                  </form>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Favorilerim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Sepetim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Giriş Yap</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--
+                    <div class="box">
+                <h2 class="product-name">Kazak</h2>
+                <h2 class="deneme">ss</h2>
+                <ul>
+                    <li><h1 class="price">2200,00</h1></li>
+                    <li><h1 class="tl">TL</h1></li>
+                </ul>
+            </div>
+    -->
+    <div class="product-container">
+        <div class="content">
+            <div class="product-image">
+                <img src="./img/kazak.jpg">
+                
+            </div>
+            <div class="product-features">
+                <h2 class="product-name">Yünlü Kazak</h2>
+                <ul class="list-price">
+                    <li><h1 class="price">2200,00</h1></li>
+                    <li><h1 class="tl">TL</h1></li>
+                </ul>
+                <hr>
+                <ul class="button-list">
+                <li><input type="number" id="quantity" name="quantity" value="1" min="1" max="10"></li>
+                <li>
+                    <h1> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Sepete Ekle</h1>       
+                </li>
+                <li><i class="fa fa-heart-o heart-empty" aria-hidden="true" onClick="heartClick(element)"></i></li>
+                </ul>
+                <hr>   
+            </div>
+        </div>
+    </div>
+
+
+    <div class="properties">
+        <div class="container">
+
+            <div class="headers">
+                <ul>
+                    <li><h2>Açıklama</h2></li>
+                    <li><h2>Değerlendirmeler</h2></li>
+                    <li><h2>Soru & Cevap</h2></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&family=Roboto+Condensed:wght@300;700&display=swap');
+
+:root {
+  --primary-font: 'Raleway', sans-serif;
+  --secondary-font: 'Roboto Condensed', sans-serif;
+  --primary-color: #4792a5;
+  --light-color: #efefef;
+  --dark-color: #3c3c3c;
+  --general-transition: all .4s ease;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+}
+section {
+  min-height: 100vh;
+}
+.container {
+  width: 100%;
+  max-width: 114rem;
+  margin: 0 auto;
+}
+button {
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--secondary-font);
+}
+html {
+  font-size: 10px;
+  color: var(--dark-color);
+  font-family: var(--primary-font);
+  scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ul {
+    list-style: none;
+  }
+
+  .nav {
+    opacity: 95%;
+    background-color: rgba(71, 146, 165, .9);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li:last-child {
+    padding-right: 0;
+}
+
+.nav-item {
+    padding: 0 2rem;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    color: var(--light-color);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    transition: var(--general-transition)
+}
+
+.nav-link:hover {
+    color: var(--dark-color);
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    height: .2rem;
+    width: 0;
+    opacity: 0;
+    background-color: var(--dark-color);
+    transition: var(--general-transition)
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+.logo {
+  font-size: 4rem;
+  text-align: center;
+  line-height: 7rem;
+
+  color: var(--light-color);    
+  transition: var(--general-transition);
+}
+.logo:hover { 
+  color: var(--dark-color);
+
+}
+.navbar-toggler {
+  font-size: 2.2rem;
+  position: absolute;
+  right: 25px;
+  z-index: 100;
+  display: none;
+}
+.navbar-toggler .line {
+  width: 2.2rem;
+  height: .4rem;
+  background-color: var(--dark-color);
+  transition: var(--general-transition);
+  margin: .5rem;   
+}
+
+form {
+  position: relative;
+  display: inline-block;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background: #f1f1f1;
+  width: 200px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type="text"]:hover {
+  width: 400px;
+  outline: none;
+}
+
+button[type="submit"] {
+  font-size: 0;
+}
+
+.product-container {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-left: center;
+    box-shadow: 1px 4px 8px rgba(0,0,0,0.4);
+}
+
+.product-image img{
+    display: block;
+	padding: 10px;
+	border: 1px solid #ccc;
+    width: 350px;
+    height: 350px;
+}
+
+.content {   
+    display: flex;
+    margin: 0 auto; 
+}
+.product-features {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.product-name {
+    letter-spacing: 2px;
+    color: var(--dark-color);
+    font-family: var(--secondary-font);
+    font-weight: 900;
+    font-size: 40px;
+}
+.list-price {
+    display: flex;
+}
+.list-price li .price {
+    margin-left: 8px;
+    color: var(--dark-color);
+    font-family: var(--secondary-font);
+    font-size: 20px;
+}
+.list-price li .tl { 
+    color: var(--dark-color);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 2px;
+}
+.button-list {
+    display: flex;
+
+}
+.button-list h1 {
+    color: var(--dark-color);
+    font-size: 20px;
+}
+.product-features ul .heart-empty {
+    margin-left: 20px;
+    color: red;
+    font-size: 20px;
+    margin-top: 20px;
+}
+input[type=number] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .properties .container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-left: center;
+    box-shadow: 1px 4px 8px rgba(0,0,0,0.4);
+  }
+  .properties ul {
+    display: flex;
+    align-items: center;
+  }
+  .x {
+    text-align: center;
+  }
+  .x h2{
+    font-size: 15px;
+    color: var(--dark-color);
+    padding-left: 10px;
+  }
+.headers li h2{
+    font-size: 20px;
+    padding-left: 25px;
+    letter-spacing: 2px;
+}
